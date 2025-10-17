@@ -11,13 +11,31 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import me.sebastianlizcano.unabshop.ui.theme.UnabShopTheme
+import androidx.navigation.NavController
+import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
+import androidx.navigation.compose.rememberNavController
+
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
+            val NavController = rememberNavController()
+            val startDestination = "login"
+
+            NavHost(NavController, startDestination) {
+                composable(route ="login"){
+                    LoginScreen()
+                }
+                composable(route ="register") {
+                    RegisterScreen()
+                }
+                composable(route ="home") {
+                    HomeScreen()
+                }
+            }
         }
     }
 }
