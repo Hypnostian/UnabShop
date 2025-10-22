@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "199873963289",
+    "project_id": "loginfirebase-d80ba",
+    "storage_bucket": "loginfirebase-d80ba.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:199873963289:android:97179198be003f28921188",
+        "android_client_info": {
+          "package_name": "me.sebastianlizcano.unabshop"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABddg4oBPEXeGM_NDziwIZ5iTuOJ4pz3c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
